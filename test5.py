@@ -1,0 +1,17 @@
+a=input("input number1:")
+b=input("input number2:")
+c=input("input number3:")
+d=input("input number4:")
+e=input("input number5:")
+
+
+print("float of %s Equal"%a,float(a))
+print("complex of%s equal"%a,complex(a))
+print("float of %s Equal"%a,float(b))
+print("complex of%s equal"%a,complex(b))
+print("float of %s Equal"%a,float(c))
+print("complex of%s equal"%a,complex(c))
+print("float of %s Equal"%a,float(d))
+print("complex of%s equal"%a,complex(d))
+print("float of %s Equal"%a,float(e))
+print("complex of%s equal"%a,complex(e))
