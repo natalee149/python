@@ -138,7 +138,7 @@ def addCustomer1 ():
             c.execute(' SELECT * FROM ingred WHERE รหัสสินค้า = ?',m)
             conn.commit ()
             result = c.fetchall()
-            amount_price1(result)
+            price1(result)
             for x in result :
                 basket2.append(x)     
 def addCustomer2 ():
@@ -154,8 +154,7 @@ def addCustomer2 ():
             c.execute(' SELECT * FROM equipment WHERE รหัสสินค้า = ?',m)
             conn.commit ()
             result = c.fetchall()
-
-            amount_price2(result)
+            price2(result)
             for x in result :
                 basket.append(x)
 
@@ -179,13 +178,13 @@ def Baskett2():
     print("ราคาสินค้าประเภทอุปกรณ์รวม",result2,"บาท")
     
 
-def amount_price1(x):
+def price1(x):
     global result
     print("ราคาสินค้าที่หยิบ",x[0][3])
     if choice == '2':
         result = result + int(x[0][3])
     print("ราคารวมสินค้าที่หยิบทั้งหมด",result)
-def amount_price2(x):
+def price2(x):
     global result2
     print("ราคาสินค้าที่หยิบ",x[0][3])
     if choice == '2':
